@@ -1,6 +1,10 @@
 import React from "react";
 
-const founders = ["Lingeswari", "Jyothish", "Ananth"];
+const founders = [
+  { name: "Lingeswari", role: "Founder" },
+  { name: "Jyothish", role: "Co-Founder" },
+  { name: "Ananth", role: "Co-Founder" },
+];
 
 const About = () => {
   return (
@@ -42,17 +46,17 @@ const About = () => {
                 FOUNDED BY FRIENDS
               </span>
               <div className="row g-3">
-                {founders.map((name, i) => (
+                {founders.map((person, i) => (
                   <div className="col-12" key={i}>
                     <div className="p-3 rounded-3 bg-light d-flex align-items-center justify-content-between border">
                       <span
                         className="font-serif fw-bold fs-5"
                         style={{ color: "var(--c-primary)" }}
                       >
-                        {name}
+                        {person.name}
                       </span>
                       <span className="small text-muted letter-space-wide">
-                        Co-Founder
+                        {person.role}
                       </span>
                     </div>
                   </div>
