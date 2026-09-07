@@ -1,0 +1,132 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+  --c-primary: #062b3a; /* Deep Ocean Navy */
+  --c-secondary: #0b5563; /* Ocean Teal */
+  --c-accent: #c99a4a; /* Warm Sand / Premium Gold */
+  --c-accent-hover: #b3853b;
+  --c-bg: #f5f1e8; /* Warm Coastal Ivory */
+  --c-dark: #031820; /* Coastal Night */
+  --c-white: #ffffff;
+  --c-subtle: #7fb7b3;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Manrope", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-tamil: "Noto Sans Tamil", sans-serif;
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--c-bg);
+  color: var(--c-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-serif {
+  font-family: var(--font-serif);
+  letter-spacing: -0.02em;
+}
+
+.font-tamil {
+  font-family: var(--font-tamil);
+}
+
+.letter-space-wide {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Glassmorphism & Cards */
+.glass-nav-scrolled {
+  background: rgba(6, 43, 58, 0.94) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(3, 24, 32, 0.25);
+}
+
+.luxury-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(11, 85, 99, 0.1);
+  box-shadow: 0 12px 30px rgba(6, 43, 58, 0.05);
+  transition: var(--transition-smooth);
+  overflow: hidden;
+}
+
+.luxury-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(201, 154, 74, 0.4);
+  box-shadow: 0 20px 40px rgba(6, 43, 58, 0.12);
+}
+
+.btn-luxury-gold {
+  background-color: var(--c-accent);
+  color: #ffffff;
+  padding: 12px 28px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid var(--c-accent);
+  border-radius: 40px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-smooth);
+}
+
+.btn-luxury-gold:hover {
+  background-color: transparent;
+  color: var(--c-accent);
+  border-color: var(--c-accent);
+}
+
+.btn-luxury-outline {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 12px 28px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 40px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-smooth);
+}
+
+.btn-luxury-outline:hover {
+  background-color: #ffffff;
+  color: var(--c-primary);
+  border-color: #ffffff;
+}
+
+.gold-line {
+  width: 50px;
+  height: 2px;
+  background-color: var(--c-accent);
+  display: inline-block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
