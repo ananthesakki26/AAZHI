@@ -6,7 +6,7 @@ import crabImg from "../assets/images/seafood/crab.png";
 const CrabSection = () => {
   return (
     <section
-      className="py-5"
+      className="py-5 overflow-hidden position-relative"
       style={{ backgroundColor: "var(--c-primary)", color: "#FFFFFF" }}
     >
       <div className="container py-lg-4">

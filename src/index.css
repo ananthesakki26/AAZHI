@@ -1,5 +1,11 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
+html, body, #root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip !important;
+}
+
 :root {
   --c-primary: #062b3a; /* Deep Ocean Navy */
   --c-secondary: #0b5563; /* Ocean Teal */
@@ -130,3 +136,4 @@ h3,
     transition-duration: 0.01ms !important;
   }
 }
+
